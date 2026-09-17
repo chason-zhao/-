@@ -1,9 +1,9 @@
 #!name = 东方财富 去开屏广告
-#!desc = 仅去除东方财富开屏广告，保留活动信息
+#!desc = 东方财富开屏广告
 #!author = Custom
 
 [Rewrite]
-^https:\/\/swdlcdn\.eastmoney\.com\/app\/adimg\/ url reject-dict
+^https:\/\/choicegw2\.eastmoney\.com\/ads\/userauth\/api\/Ad\/GetLaunchAd reject
 
 [MITM]
-hostname = swdlcdn.eastmoney.com
+hostname = choicegw2.eastmoney.com
